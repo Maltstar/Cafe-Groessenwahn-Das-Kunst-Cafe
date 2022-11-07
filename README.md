@@ -1,4 +1,4 @@
-# Cafe-Groessenwahn-Das-Kunst-Cafe
+# Cafe-Größenwahn-Das-Kunst-Cafe
 A responsive website for a fictive coffee &amp; restaurant mainly written in html.
 
 You can have a look at the live demo:
