@@ -1,0 +1,788 @@
+/*  Ein Kommentar in CSS */
+
+/* @font-face {
+	font-family: 'Outfit', sans-serif;
+	font-style: normal;
+	font-size: 100%;
+	src: local('/css/Outfit');
+	font-display: swap;
+  } */
+
+/*  Der * definiert den "global reset" Hier werden alle Elemente angesprochen, die später nicht anders definiert werden. */
+*
+{
+	font-family: 'Outfit', sans-serif;
+	font-size:100%;
+}
+
+
+/******** ANFANG INDEX.HTML *********/
+
+html,body
+{
+	height:100%;
+	padding:0px;
+	
+}
+
+body 
+{
+	background:#2C0757;
+	color:white;
+	margin:0px;
+}
+
+/* ANFANG WRAPPER */
+#main_wrapper
+{
+	margin: 0px auto;
+	width: 1440px;
+	height: 985px; /* to fit to one page exactly to display, to be modified if needed*/
+}
+/* ENDE WRAPPER */
+
+
+/** ANFANG OBEN **/
+#oben
+{
+	margin: auto;
+	height: auto; 
+}
+
+
+/* ANFANG TITLE */
+#title h1
+{
+	margin: auto;
+	width:fit-content;
+	font-family: 'Rouge Script', cursive;
+	font-size: 500%;
+	padding: 0.4em;
+}
+/* END TITLE */
+
+/** END OBEN **/
+
+
+/**** ANFANG MENU ****/
+#menu
+{
+	padding-top:5px;;
+}
+
+/*** ANFANG NAV ***/
+#nav
+{
+	width: 100%; 
+}
+
+ul
+{
+	display:flex;
+	justify-content: space-evenly;
+	list-style-type: none;
+}
+
+/** ANFANG NAVIPUNKT **/
+.navipunkt
+{
+	background:#810900;
+	border:2px solid white;
+	border-radius: 10px;
+	padding:10px;
+	font-family: 'Outfit', sans-serif;
+	font-size: 150%;
+}
+
+.navipunkt:hover
+{
+	background:#2F000B;
+}
+
+/** ENDE NAVIPUNKT **/
+
+#dabinich
+{
+	background:#062F53;
+}
+
+#dabinich:hover
+{
+	background:#2F000B;
+}
+
+/*** END NAV ***/
+
+/**** ENDE MENU ****/
+
+
+
+/** ANFANG VORSTELLUNG **/
+#vorstellung
+{
+	height: fit-content; 
+	padding:1em;
+}
+
+/* ANFANG VORSTELLUNG_TEXT */
+.vorstellung_text p
+{
+	_border:1px solid white;
+	text-align: center;
+	font-family: 'Outfit', sans-serif;
+	font-size: 125%;
+}
+/* END VORSTELLUNG_TEXT */
+
+/* ANFANG GALERIE */
+#galerie
+{
+	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+}
+/* END GALERIE */
+
+/** END VORSTELLUNG **/
+
+
+/* ANFANG ROW NEWS */
+.row_news
+{
+	background:#062F53;
+	max-width:95%;
+	margin:auto;
+	padding:10px;
+	border-radius: 1em;
+	border:2px solid white;
+}
+/* ENDE ROW NEWS */
+
+
+/* ANFANG TITLE NEWS */
+#title_news
+{
+	margin:auto;
+	width:fit-content;
+}
+
+#title_news, #team_text h1
+{
+	font-family: 'Rouge Script', cursive;
+	margin:auto;
+	font-size: 220%;
+}
+/* END TITLE NEWS */
+
+
+
+/* ANFANG NEWS CONTENT */
+#news_content
+{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-evenly;
+}
+/* END NEWS CONTENT */
+
+/* ANFANG NEWS BOX */
+.news_box
+{
+	background:#062F53;
+	max-width:45%; 
+	padding:10px;
+	border:1px solid white;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin:10px;
+	box-sizing: border-box;
+}
+/* END NEWS BOX*/
+
+
+/* ANFANG BILD BOX */
+.bild_box
+{
+	box-sizing: border-box;
+}
+/* END BILD BOX*/
+
+
+/** ANFANG NEWS TEXT **/
+.news_text
+{
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.news_text h1
+{
+	font-size: 110%;
+}
+/** ENDE NEWS TEXT **/
+
+
+/* ANFANG TEAM ROW */
+#team_row
+{
+	padding-top:2em;
+
+}
+/* ENDE TEAM ROW */
+
+/* ANFANG TEAM BOX */
+#team_box
+{
+	background:#530013;
+	height: auto; 
+	max-width: 45%;
+	margin:1em auto; /*center team box along x-axis*/
+	display: flex;
+	justify-content:space-evenly;
+	padding:15px;
+
+}
+/* END TEAM BOX */
+
+
+/* ANFANG TEAM TEXT */
+#team_text
+{
+	text-align: center;
+	box-sizing: border-box;
+}
+
+
+/* END TEAM TEXT*/
+
+
+/* ANFANG FOOTER */
+#footer
+{
+	height:3.25em; /* 52px; */
+}
+/* END FOOTER */
+
+
+/* ANFANG COPYRIGHT */
+#copyright
+{
+	max-width:40%;
+	float:left;
+	box-sizing: border-box;
+}
+/* ENDE COPYRIGHT */
+
+
+/* ANFANG SOCIAL NETOWORK ICONS */
+#social_network_icons
+{
+	float:right;
+	max-width:30%;
+	max-height: 3.25em; /* 52px; */
+	padding:8px;
+	box-sizing: border-box;	
+}
+/* ENDE SOCIAL NETOWORK ICONS */
+
+a
+{
+	color:white;
+	text-decoration:none;
+}
+
+/******** ENDE INDEX.HTML *********/
+
+
+
+/******** ANFANG EVENTS.HTML *********/
+
+/* ANFANG EVENTS CONTENT */
+#events_content
+{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	background:#062F53;
+}
+/* ENDE EVENTS CONTENT */
+
+
+/* ANFANG EVENT BOX */
+.event_box
+{
+	max-width:45%; 
+	padding:10px;
+	border:1px solid white;
+	margin:10px;
+	box-sizing: border-box;
+}
+/* END EVENT BOX*/
+
+/* ANFANG BILD EVENT BOX */
+.bild_event_box
+{
+	box-sizing: border-box;
+	text-align: center;
+}
+/* END BILD EVENT BOX*/
+
+
+/** ANFANG EVENT TEXT **/
+.event_text
+{
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.event_text h1
+{
+	font-size: 110%;
+}
+/** ENDE NEWS TEXT **/
+
+/******** ENDE EVENTS.HTML *********/
+
+
+
+
+/******** ANFANG GALERIE.HTML *********/
+
+
+
+#row_galerie
+{
+	max-width: 75%;
+	background:#062F53;
+	margin: auto;
+	border:solid 1px white;
+	border-radius: 1em;
+	
+}
+
+
+.galerie_item_box
+{
+	text-align:center;
+}
+
+#fadeshow
+{
+	margin:auto;
+}
+
+#video
+{
+	margin:auto;
+}
+
+
+
+/******** ENDE GALERIE.HTML *********/
+
+
+/******** ANFANG RESTAURANT.HTML *********/
+
+/* ANFANG BILD BOX RESTAURANT */
+.bild_box_rest
+{
+	display:inline-flex;
+}
+
+/* ANFANG GALERIE RESTAURANT */
+#galerie_restaurant
+{
+	text-align: center;
+	display: block;
+}
+
+.speisekarte
+{
+	color: rgb(91, 218, 32);
+}
+
+#speisekarte:hover
+{
+	color:goldenrod;
+}
+/* END GALERIE RESTAURANT*/
+/* END BILD BOX RESTAURANT */
+
+
+/******** ENDE RESTAURANT.HTML *********/
+
+
+/******** ANFANG ARBEIT.HTML *********/
+
+#row_formular
+{
+	max-width: 75%;
+	background:#062F53;
+	margin: auto;
+	border:solid 1px white;
+	border-radius: 1em;
+	
+}
+
+
+table
+{
+	min-width: 70%;
+}
+
+/******** ENDE ARBEIT.HTML *********/
+
+
+/******** ANFANG KONTAKT.HTML *********/
+
+#row_formular_and_kontakt_content
+{
+	max-width: 75%;
+	background:#062F53;
+	margin: auto;
+	border:solid 1px white;
+	border-radius: 1em;
+}
+
+.item_box
+{
+	width:100%;
+	text-align: center;
+}
+
+
+table
+{
+	min-width: 70%;
+}
+
+#table_impressum
+{
+	text-align: center;
+	padding-left: 30%;
+}
+
+/******** ENDE KONTAKT.HTML *********/
+
+
+/******** ANFANG IMPRESSUM.HTML *********/
+
+.main_frame
+{
+	margin: 10%;
+	display: block;
+	height: 200%;
+	height: max-content;
+}
+
+#row_impressum_menu
+{
+	max-width: 40%;
+	height: auto;
+	background:#062F53;
+	margin: auto;
+	border:solid 1px white;
+	border-radius: 1em;
+}
+
+.row_impressum
+{
+	height: auto;
+	background:#062F53;
+	margin: auto;
+	border:solid 1px white;
+	border-radius: 1em;
+	text-align: center;
+}
+
+.impressum_content
+{
+	font-size: 125%;
+}
+
+#row_dataschutz
+{
+	max-width: 40%;
+	_height: 50%;
+	background:#062F53;
+	margin: auto;
+	border:solid 1px white;
+	border-radius: 1em;
+}
+/******** ENDE IMPRESSUM.HTML *********/
+
+
+/***************************************************************/
+/************************ MEDIA QUERY **************************/
+/***************************************************************/
+
+@media screen and (max-width:800px) {
+	
+img
+{
+	max-width:100%;
+	height:auto;
+}
+
+
+/******** ANFANG INDEX.HTML *********/
+
+/* ANFANG WRAPPER */
+#main_wrapper
+{
+	margin: 0px auto;
+	width: 100%;
+	height: auto; /* to fit to one page exactly to display, to be modified if needed*/
+}
+/* ENDE WRAPPER */
+
+
+/** ANFANG OBEN **/
+#oben
+{
+	margin: auto;
+	height: auto; 
+}
+
+/* ANFANG TITLE */
+#title h1
+{
+	margin: auto;
+	width:fit-content;
+	font-family: 'Rouge Script', cursive;
+	font-size: 8vw;
+	padding: 0.4em;
+}
+/* END TITLE */
+
+/** ENDE OBEN **/
+
+/*** ANFANG MENU ***/
+#menu
+{
+	padding-top:0em;
+	display: block;
+	text-align: center;
+}
+
+/** ANFANG NAV **/
+#nav
+{
+	display: block;
+	text-align: center;
+	_box-sizing:content-box;
+	_margin: 5%;
+	_width:auto;
+}
+
+
+ul
+{
+	display:block;
+	text-align: center;
+	max-width: 35%;
+	margin: auto;
+	padding: 0%;
+	_margin-left: 0%;
+	box-sizing: border-box; 
+}
+
+li
+{
+	box-sizing: border-box; 
+	min-width: fit-content;
+}
+
+
+/* ANFANG NAVIPUNKT */
+.navipunkt
+{
+	background:#810900;
+	border:0.125em solid white;
+	border-radius: 0.625em; /* 10px*/
+	padding:0.625em;
+	font-family: 'Outfit', sans-serif;
+	font-size: 3vw;
+	text-align: center;
+}
+/* ENDE NAVIPUNKT */
+	
+/** ENDE NAV **/	
+
+/*** ENDE MENU ***/
+
+/** ANFANG VORSTELLUNG **/
+#vorstellung
+{
+	box-sizing: border-box;
+}
+
+/* ANFANG VORSTELLUNG_TEXT */
+.vorstellung_text p
+{
+	_border:1px solid white;
+	text-align: center;
+	font-family: 'Outfit', sans-serif;
+	font-size: 100%;
+}
+/* END VORSTELLUNG_TEXT */
+
+/* ANFANG GALERIE */
+#galerie
+{
+	text-align: center;
+	display: block;
+}
+/* END GALERIE */
+
+
+
+
+/* ANFANG ROW NEWS */
+#row_news
+{
+	padding:0.625em;
+	border-radius: 1em;
+	border:0.125em solid white; /* 2px*/
+}
+/* ENDE ROW NEWS */
+
+/* ANFANG TITLE NEWS */
+#title_news, #team_text h1
+{
+	_font-size: 4vw;
+	font-size: 100%;
+}
+/* ENDE TITLE NEWS */
+
+#main_frame
+{
+	display:block;
+	text-align: center;	
+}
+
+/* ANFANG NEWS CONTENT */
+#news_content
+{
+	display:block;
+}
+/* END NEWS CONTENT */
+
+
+/* ANFANG NEWS BOX */
+.news_box
+{
+
+	padding:0.625em;
+	border:0.0625em solid white;
+	margin:0.625em;
+	display: block;
+	margin: 1em auto;
+	max-width: 70%;
+	text-align: center;
+}
+/* END NEWS BOX*/
+
+
+/** ANFANG NEWS TEXT **/
+.news_text
+{
+	font-size: 2vw;
+}
+
+.news_text h1
+{
+	font-weight: 500;
+	font-size: 3vw;
+	margin: 0em 1em;
+}
+/** ENDE NEWS TEXT **/
+
+/* ANFANG TEAM BOX */
+#team_box
+{
+
+	display: block;
+	padding:0.9375em;
+	text-align: center;
+
+}
+/* END TEAM BOX */
+
+/******** ENDE INDEX.HTML *********/
+
+/******** ANFANG EVENTS.HTML *********/
+
+/* ANFANG NEWS CONTENT */
+#events_content
+{
+	display:block;
+}
+/* END NEWS CONTENT */
+
+
+/* ANFANG NEWS BOX */
+.event_box
+{
+	max-width:100%; 
+	padding:0.625em;
+	border:0.0625em solid white;
+	margin:0.625em;
+}
+/* END NEWS BOX*/
+
+/******** ENDE EVENTS.HTML *********/
+
+
+
+/******** ANFANG GALERIE.HTML *********/
+
+
+
+#row_galerie
+{
+	max-width: 75%;
+	background:#062F53;
+	margin: auto;
+	border:solid 1px white;
+	border-radius: 1em;
+	
+}
+
+
+.galerie_item_box
+{
+	text-align:center;
+	width: 100%;
+	_max-width: fit-content;
+}
+
+/* Abschaltung des Fadesshows für die Mobile Version*/
+#fadeshowheader h1
+{
+	display:none;
+}
+
+#fadeshow
+{
+	display:none;
+}
+
+#video
+{
+	width:100%;
+	max-width: fit-content;
+	float:none;
+}
+
+iframe
+{
+	width:100%;
+}
+
+
+/******** ENDE GALERIE.HTML *********/
+
+}
