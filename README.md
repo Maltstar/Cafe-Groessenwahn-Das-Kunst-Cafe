@@ -1,5 +1,5 @@
 # Cafe-Groessenwahn-Das-Kunst-Cafe
-A responsive website for a fictive coffee &amp; restaurant.
+A responsive website for a fictive coffee &amp; restaurant mainly written in html.
 
 Download the source code of the repository and open index.html.
 
